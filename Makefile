@@ -23,7 +23,7 @@ OBJ = $(SRCS:.c=.o)
 
 all: $(NAME)
 $(NAME):
-	$(CC) $(FLAGS) -lpthread $(SRCS) -o philo
+	$(CC) $(FLAGS) -lpthread -pthread $(SRCS) -o philo
 
 clean:
 	rm -rf $(OBJ)

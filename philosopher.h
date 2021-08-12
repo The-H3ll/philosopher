@@ -32,7 +32,8 @@ typedef struct s_thread
     int             eat;
     int             slept;
     int             think;
-    long            life;
+    int             life;
+    int             time;
     pthread_mutex_t *mutex;
 }				t_thread;
 
@@ -55,3 +56,6 @@ typedef struct s_philo
     int				starting_time;
    // pthread_mutex_t *mutex;
 }               t_philo;
+
+int checkout;
+int *check;
